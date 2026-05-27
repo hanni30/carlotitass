@@ -18,6 +18,21 @@ header {
     text-align: center;
     padding: 20px;
     font-size: 30px;
+
+    /* Animación */
+    position: relative;
+    animation: mover 3s infinite alternate ease-in-out;
+}
+
+/* Movimiento izquierda-derecha */
+@keyframes mover {
+    from {
+        transform: translateX(-120px);
+    }
+
+    to {
+        transform: translateX(120px);
+    }
 }
 
 .contenido {
@@ -123,9 +138,8 @@ de galleta con cremas deliciosas y sabores que conquistan desde el primer bocado
 
 <!-- Música MP3 -->
 <div class="musica">
-    <audio controls autoplay loop>
-        <source src="file:///C:/Users/MOL-06/Downloads/8--m%C3%BAsica-para-recetas-de-pasteler%C3%ADa-y-reposter%C3%ADa-canciones-para-recetas--bensound--buddy.mp3" type="audio/mpeg">
-        Tu navegador no soporta audio.
+    <audio controls loop>
+        <source src="NOMBREEXACTO.mp3" type="audio/mpeg">
     </audio>
 </div>
 
